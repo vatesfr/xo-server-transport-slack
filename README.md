@@ -12,11 +12,58 @@ Installation of the [npm package](https://npmjs.org/package/xo-server-transport-
 
 ## Usage
 
-**TODO**
+Like all other xo-server plugins, it can be configured directly via
+the web iterface, see [the plugin documentation](https://xen-orchestra.com/docs/plugins.html). You can also test the configuration plugin if it works.
+
+### Slack
+
+#### Generate the Webhook
+
+1. Login in your Slack team account.
+
+2. Click on the **Main menu** at the top and choose **Apps & Integrations**.
+
+![Apps & Integrations](image/DocImg1.png)
+
+3. Search **Incoming WebHooks**.
+
+![Incoming WebHooks](image/DocImg2.png)
+
+4. Click on **Add Configuration**.
+
+![Add Configuration](image/DocImg3.png)
+
+5. Choose the default channel and click on **Add Incoming WebHooks integration**.
+
+![Add Incoming WebHooks integration](image/DocImg4.png)
+
+6. Modify the default setting and click on **Save Settings**.
+
+![Save Settings](image/DocImg5.png)
 
 ## Development
 
-```
+### `configure(configuration) `
+
+This method is called each time the plugin is (re-)configured.
+Its only parameter is an object which contains the configuration values.
+
+### `load() `
+
+This method is called to load the plugin.
+
+### `unload() `
+
+This method is called to unload the plugin.
+
+### `test() `
+
+This method is called to test the configuration plugin.
+
+### `_sendSlack(message) `
+
+This method is called to send the message passed in parameter.
+
 # Install dependencies
 > npm install
 
