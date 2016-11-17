@@ -41,6 +41,20 @@ the web iterface, see [the plugin documentation](https://xen-orchestra.com/docs/
 
 ![Save Settings](image/DocImg5.png)
 
+### Examples
+
+#### Slack
+
+![Slack configuration](image/DocImg6.png)
+
+![Slack](image/DocImg7.png)
+
+#### Mattermost
+
+![Mattermost configuration](image/DocImg8.png)
+
+![Mattermost](image/DocImg9.png)
+
 ## Development
 
 ### `configure(configuration) `
