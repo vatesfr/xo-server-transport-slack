@@ -41,7 +41,7 @@ the web iterface, see [the plugin documentation](https://xen-orchestra.com/docs/
 
 ![Save Settings](image/DocImg5.png)
 
-### Examples
+### Testing the plugin
 
 #### Slack
 
