@@ -28,7 +28,7 @@ export const configurationSchema = {
     },
     icon_emoji: {
       type: 'string',
-      description: 'The bot icone. It can be a slack emoji or an URL image.'
+      description: 'The bot icon. It can be a slack emoji or a URL image.'
     }
   },
   additionalProperties: false,
