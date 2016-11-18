@@ -37,7 +37,7 @@ export const configurationSchema = {
 
 // ===================================================================
 
-class XoServerTransportNagios {
+class XoServerTransportSlack {
   constructor ({ xo }) {
     this._sendSlack = ::this._sendSlack
     this._set = ::xo.defineProperty
@@ -83,4 +83,4 @@ The transport-slack plugin for Xen Orchestra server seems to be working fine, ni
   }
 }
 
-export default opts => new XoServerTransportNagios(opts)
+export default opts => new XoServerTransportSlack(opts)
