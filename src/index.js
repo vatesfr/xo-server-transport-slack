@@ -68,18 +68,17 @@ class XoServerTransportSlack {
 
   test () {
     return this._sendSlack({
-      text: `Hi there,
+      message: `Hi there,
 
 The transport-slack plugin for Xen Orchestra server seems to be working fine, nicely done :)`
     })
   }
 
   _sendSlack ({
-    text
+    message
   }) {
-    this._conf.text = text
     // TODO: handle errors
-    return this._send(this._conf).catch(logAndRethrow)
+    return this._send({ ...this._conf, text: message }).catch(logAndRethrow)
   }
 }
 
