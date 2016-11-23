@@ -52,26 +52,9 @@ the web iterface, see [the plugin documentation](https://xen-orchestra.com/docs/
 
 ## Development
 
-### `configure(configuration) `
+### `Xo#sendSlackMessage({ message }) `
 
-This method is called each time the plugin is (re-)configured.
-Its only parameter is an object which contains the configuration values.
-
-### `load() `
-
-This method is called to load the plugin.
-
-### `unload() `
-
-This method is called to unload the plugin.
-
-### `test() `
-
-This method is called to test the configuration plugin.
-
-### `_sendSlack(message) `
-
-This method is called to send the message passed in parameter.
+This xo method is called to send the message passed in parameter to Slack or Mattermost.
 
 # Install dependencies
 > npm install

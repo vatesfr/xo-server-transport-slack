@@ -59,7 +59,7 @@ class XoServerTransportSlack {
   }
 
   load () {
-    this._unset = this._set('sendSlack', this._sendSlack)
+    this._unset = this._set('sendSlackMessage', this._sendSlack)
   }
 
   unload () {
